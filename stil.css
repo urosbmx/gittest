@@ -58,3 +58,7 @@ label {
         border-radius: 20px;
     }
 }
+
+.error {
+    border-color: red;
+}

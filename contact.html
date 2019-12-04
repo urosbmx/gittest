@@ -43,6 +43,7 @@
             var name = $('.ime').val();
             var mail = $('.email').val();
             var mesage = $('.poruka').val();
+            $("input").removeClass("error");
             if (name && mail != "") {
                 alert("Vase ime je: " + name + " Vas mail adresa je  " + mail);
                 $('.ime').val("");
@@ -59,6 +60,7 @@
                 });
             } else {
                 alert("popunite sva polaj");
+                $("input").addClass("error");
             }
 
 
