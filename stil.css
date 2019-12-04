@@ -7,3 +7,45 @@ body{
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.wraper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav {
+    background-color: #333;
+    border-radius: 20px;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+}
+nav a:hover{
+    background-color: #555;
+    border-radius: 20px;
+}
+
+@media screen and (min-width: 768px){
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav li{
+        flex: 1 1 0;
+    }
+    
+    
+    
+    
+    
+}
