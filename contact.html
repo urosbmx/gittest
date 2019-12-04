@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="stil.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wraper">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">GALERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+
+        </nav>
+        <section>
+            <form action="get.php" method="get">
+                <label>Ime</label>
+                <input type="text" class="ime">
+                <label>Email</label>
+                <input type="email" class="email">
+                <br />
+                <textarea rows="4" cols="50"  class="poruka">
+                    ostavite poruku
+                </textarea>
+
+            </form>
+            <button id="send">Posalji</button>
+
+        </section>
+
+
+    </div>
+    <script>
+        $(document).on('click', '#send', function() {
+        var name = $('.ime').val();
+        var mail = $('.email').val();
+        var mesage = $('.poruka').val();
+            if(name && mail != "" ){
+             alert("Vase ime je: "+name+" Vas mail adresa je  " +mail);   
+            }
+            else{
+                alert("popunite sva polaj");
+            }
+
+
+        });
+    </script>
+
+</body></html>
