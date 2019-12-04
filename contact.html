@@ -46,6 +46,9 @@
             var mesage = $('.poruka').val();
             if (name && mail != "") {
                 alert("Vase ime je: " + name + " Vas mail adresa je  " + mail);
+                $('.ime').val("");
+                $('.email').val("");
+                $('.poruka').val("");
             } else {
                 alert("popunite sva polaj");
             }
