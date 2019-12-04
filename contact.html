@@ -21,14 +21,14 @@
             </ul>
 
         </nav>
-        <section>
+        <section class="center">
             <form action="get.php" method="get">
                 <label>Ime</label>
                 <input type="text" class="ime">
                 <label>Email</label>
                 <input type="email" class="email">
                 <br />
-                <textarea rows="4" cols="50"  class="poruka">
+                <textarea rows="4" cols="50" class="poruka">
                     ostavite poruku
                 </textarea>
 
@@ -41,13 +41,12 @@
     </div>
     <script>
         $(document).on('click', '#send', function() {
-        var name = $('.ime').val();
-        var mail = $('.email').val();
-        var mesage = $('.poruka').val();
-            if(name && mail != "" ){
-             alert("Vase ime je: "+name+" Vas mail adresa je  " +mail);   
-            }
-            else{
+            var name = $('.ime').val();
+            var mail = $('.email').val();
+            var mesage = $('.poruka').val();
+            if (name && mail != "") {
+                alert("Vase ime je: " + name + " Vas mail adresa je  " + mail);
+            } else {
                 alert("popunite sva polaj");
             }
 
@@ -55,4 +54,6 @@
         });
     </script>
 
-</body></html>
+</body>
+
+</html>
