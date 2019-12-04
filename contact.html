@@ -28,8 +28,7 @@
                 <label>Email</label>
                 <input type="email" class="email">
                 <br />
-                <textarea rows="4" cols="50" class="poruka">
-                    ostavite poruku
+                <textarea rows="4" cols="50" class="poruka">Ostavite poruku
                 </textarea>
 
             </form>
@@ -49,6 +48,15 @@
                 $('.ime').val("");
                 $('.email').val("");
                 $('.poruka').val("");
+
+                $.ajax({
+                    url: "get.php",
+                    method: "POST",
+                    data: {
+                        id: name
+                    },
+                    dataType: "html"
+                });
             } else {
                 alert("popunite sva polaj");
             }
