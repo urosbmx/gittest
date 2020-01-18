@@ -74,12 +74,26 @@ label {
 
 .about-contact {
     display: inline-block;
-    position: relative;
-    top: 350px;
-    left: 30px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
 }
+.about-contact input{
+    width: 180px;
 
-.modal{
+}
+.about-contact textarea{
+    width: 180px;
+
+}
+.about-contact button{
+    margin-top: 10px;
+    padding: 5px;
+    width: 190px;
+}
+.modal{ 
     height: 300px;
     width: 800px;
     background-color: white;

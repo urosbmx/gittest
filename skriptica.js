@@ -37,4 +37,14 @@ $(".close").on("click",function(){
     $("#modalholder").hide();
 });
 
+// logovanje na formu
+$("#login").on("click",function(){
+    $("#holderLogin").find("input").each(function(){
+        var vrednost = $(this).val();
+        console.log(vrednost);
+
+    });
+   
+});
+
 
