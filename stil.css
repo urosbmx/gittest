@@ -154,3 +154,11 @@ margin-top: 25px;
     position: relative;
     top:350px
 }
+.greskica{
+    display: none;
+    text-align: center;
+    color: red;
+
+    position: relative;
+    top:-27px
+}

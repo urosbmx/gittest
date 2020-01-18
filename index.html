@@ -16,12 +16,13 @@
         <div class="close"></div>
         <div class="modal center">
             <h4 style="text-align: center; font-weight: 700; font-size: 18px;">Prijava na portal</h4>
+            <h5 class="greskica"> Nisu tacni username ili password</h5>
             <div id="holderLogin" class="center">
                 <form>
                     <label class="formamodal">Username</label>
-                    <input type="text" name="username" class="formamodal">
+                    <input type="text" name="username" class="formamodal" id="username">
                     <label class="formamodal">Password</label>
-                    <input type="password" name="Password" class="formamodal">
+                    <input type="password" name="Password" class="formamodal" id="password">
                     
                 </form>
                 <button class="formamodal" id="login">Uloguj se</button>
@@ -52,10 +53,11 @@
             <br>
             <button type="submit" id="save">Snimi</button>
         </div>
-        <script src="skriptica.js"></script>
+       
 
 
     </div>
+    <script src="skriptica.js"></script>
 </body>
 
 </html>

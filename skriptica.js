@@ -41,7 +41,22 @@ $(".close").on("click",function(){
 $("#login").on("click",function(){
     $("#holderLogin").find("input").each(function(){
         var vrednost = $(this).val();
-        console.log(vrednost);
+        var username = $("#username").val();
+        var password = $("#password").val();
+
+        if(username =="uros" && password == "katanic"){
+            window.open('error404.html');
+            $("#modalholder").hide();
+           $("#username").val("");
+            $("#password").val("");
+            $("#username").removeClass("error");
+            $("#password").removeClass("error");
+        }
+        else{
+            $("#username").addClass("error");
+            $("#password").addClass("error");
+            $(".greskica").show();
+    }
 
     });
    
