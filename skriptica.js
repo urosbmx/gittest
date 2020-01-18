@@ -26,3 +26,7 @@ $("#save").click(function() {
 
     });
 });
+
+$("[data-group='Companies']").on("click",function(){
+    $("#modalholder").show();
+});

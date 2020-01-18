@@ -78,3 +78,14 @@ label {
     top: 350px;
     left: 30px;
 }
+
+.modal{
+
+}
+#modalholder{
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    }
