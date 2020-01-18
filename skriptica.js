@@ -27,6 +27,14 @@ $("#save").click(function() {
     });
 });
 
+//prikazivanje modala
 $("[data-group='Companies']").on("click",function(){
     $("#modalholder").show();
 });
+
+// zatvaranje modala
+$(".close").on("click",function(){
+    $("#modalholder").hide();
+});
+
+

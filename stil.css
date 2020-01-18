@@ -80,6 +80,14 @@ label {
 }
 
 .modal{
+    height: 300px;
+    width: 800px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    
+    border-radius: 20px;
 
 }
 #modalholder{
@@ -88,4 +96,47 @@ label {
     width: 100%;
     position: fixed;
     z-index: 20;
+    display: none;
     }
+
+.close{
+background-image: url(img/close.png);
+position: fixed;
+top:30px;
+left: 95%;
+height: 60px;
+width: 60px;
+z-index: 200;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+
+#holderLogin{
+border: 1px dotted #333333;
+height: 220px;
+width: 700px;
+margin-top: 25px;
+
+
+}
+
+#holderLogin label{
+    color: black;
+    display: inline-block;
+}
+#holderLogin input{
+    
+    color: black;
+    
+}
+.formamodal{
+    position: relative;
+    top: 50px;
+    left: 280px;
+    width: 150px;
+}
+.formamodal button{
+    position: relative;
+    top:350px
+}
