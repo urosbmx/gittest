@@ -75,90 +75,98 @@ label {
 .about-contact {
     display: inline-block;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    
+    transform: translate(-50%, -50%);
 }
-.about-contact input{
-    width: 180px;
 
-}
-.about-contact textarea{
+.about-contact input {
     width: 180px;
-
 }
-.about-contact button{
+
+.about-contact textarea {
+    width: 180px;
+}
+
+.about-contact button {
     margin-top: 10px;
     padding: 5px;
     width: 190px;
 }
-.modal{ 
+
+.modal {
     height: 300px;
     width: 800px;
     background-color: white;
     position: absolute;
-    top:50%;
-    left:50%;
-    
+    top: 50%;
+    left: 50%;
     border-radius: 20px;
-
 }
-#modalholder{
+
+#modalholder {
     background: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
     position: fixed;
     z-index: 20;
     display: none;
-    }
-
-.close{
-background-image: url(img/close.png);
-position: fixed;
-top:30px;
-left: 95%;
-height: 60px;
-width: 60px;
-z-index: 200;
-background-position: center;
-background-repeat: no-repeat;
 }
 
-
-#holderLogin{
-border: 1px dotted #333333;
-height: 220px;
-width: 700px;
-margin-top: 25px;
-
-
+.close {
+    background-image: url(img/close.png);
+    position: fixed;
+    top: 30px;
+    left: 95%;
+    height: 60px;
+    width: 60px;
+    z-index: 200;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#holderLogin label{
+#holderLogin {
+    border: 1px dotted #333333;
+    height: 220px;
+    width: 700px;
+    margin-top: 25px;
+}
+
+#holderLogin label {
     color: black;
     display: inline-block;
 }
-#holderLogin input{
-    
+
+#holderLogin input {
     color: black;
-    
 }
-.formamodal{
+
+.formamodal {
     position: relative;
     top: 50px;
     left: 280px;
     width: 150px;
 }
-.formamodal button{
+
+.formamodal button {
     position: relative;
-    top:350px
+    top: 350px
 }
-.greskica{
+
+.greskica {
     display: none;
     text-align: center;
     color: red;
-
     position: relative;
-    top:-27px
+    top: -27px
+}
+
+#galery {
+    height: 800px;
+    width: 1000px;
+    -webkit-box-shadow: 13px 10px 5px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 13px 10px 5px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 13px 10px 5px 0px rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
 }
