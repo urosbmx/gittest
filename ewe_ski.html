@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="stil.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+<style>
+     body{
+         background-image: url("http://hdwpro.com/wp-content/uploads/2016/01/Snowfall-Winter-Wallpaper.jpg");
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         height: 100vh;
+     }
+
+.formSkiEwe{
+    
+    width: 800px;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+.formSkiEwe form{
+    padding-left: 100px;
+    padding-right: 100px;
+    color:black
+}
+.error {
+    border-color: red;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div id="modalholder">
+        <div class="close"></div>
+        <div class="modal center">
+            <h4 style="text-align: center; font-weight: 700; font-size: 18px;">Prijava na portal</h4>
+            <h5 class="greskica"> Nisu tacni username ili password</h5>
+            <div id="holderLogin" class="center">
+                <form>
+                    <label class="formamodal">Username</label>
+                    <input type="text" name="username" class="formamodal" id="username">
+                    <label class="formamodal">Password</label>
+                    <input type="password" name="Password" class="formamodal" id="password">
+
+                </form>
+                <button class="formamodal" id="login">Uloguj se</button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="wraper">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT ME</a></li>
+                <li><a href="#">GALERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="ewe_ski.">Ewe ski</a></li>
+            </ul>
+        </nav>
+
+        <div class="formSkiEwe center">
+            <h3 style="text-align: center; padding-bottom: 50px;">Dobro dosli na Ewe Skijanje</h3>
+            <form>
+                <div class="form-group">
+                    <label for="email-ski-name" style="color: black;">Ime</label>
+                    <input type="text" class="form-control" id="email-ski-name">
+                </div>
+                <div class="form-group">
+                    <label for="email-ski-lastname" style="color: black;">Prezime</label>
+                    <input type="text" class="form-control" id="email-ski-lastname">
+                </div>
+                <div class="form-group">
+                    <label for="email-ski" style="color: black;">Email adresa</label>
+                    <input type="text" class="form-control" id="email-ski">
+                </div>
+                <div class="form-group">
+                    <label for="email-ski-company" style="color: black;">Firma</label>
+                    <input type="text" class="form-control" id="email-ski-company">
+                </div>
+            </form>
+            <button type="submit" class="btn btn-default" id="prijaviEwe" style="margin-left:100px;">Prijavi se</button>
+            <span style="position: fixed; z-index: 3; left: 670px; display: inline-block; top:90%;color: blue;" title="Pravila">Ewe ski takmicenje</span>
+        </div>
+    <script src="skriptica.js"></script>
+</body>
+
+</html>
