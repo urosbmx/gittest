@@ -8,6 +8,11 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" href="stil.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <style>
+        .error {
+            border-color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,14 +21,14 @@
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">GALERY</a></li>
+                <li><a href="galerija.html">GALERY</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
                 <li><a href="#" data-group='Companies'>Prijava</a></li>
             </ul>
 
         </nav>
         <section class="center">
-            <form action="get.php" method="get">
+            <form class="formica">
                 <label>Ime</label>
                 <input type="text" class="ime">
                 <label>Email</label>
@@ -41,32 +46,41 @@
     </div>
     <script>
         $(document).on('click', '#send', function() {
-            var name = $('.ime').val();
-            var mail = $('.email').val();
-            var mesage = $('.poruka').val();
-            $("input").removeClass("error");
-            if (name && mail != "") {
-                alert("Vase ime je: " + name + " Vas mail adresa je  " + mail);
-                $('.ime').val("");
-                $('.email').val("");
-                $('.poruka').val("");
+            var name = $(".ime").val();
+            var email = $(".email").val();
+            var mesage = $(".poruka").val();
 
+            if (email != "") {
                 $.ajax({
-                    url: "get.php",
-                    method: "POST",
+                    type: "POST",
+                    url: "test.php",
                     data: {
-                        id: name
+                        ime: name,
+                        emailAdresa: email,
+                        mesage: mesage,
                     },
-                    dataType: "html"
-                });
+                    success: function(respone) {
+                        var w = window.open('about:blank');
+                        w.document.open();
+                        w.document.write(respone);
+                        w.document.close();
+                        $('.email').removClass("error");
+                    }
+
+                })
+
+
+
             } else {
-                $("input").addClass("error");
+
+                $('.email').addClass("error");
+
             }
 
 
         });
     </script>
- <script src="skriptica.js"></script>
+    <script src="skriptica.js"></script>
 </body>
 
 </html>
