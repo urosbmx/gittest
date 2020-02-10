@@ -6,29 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
-        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <style>
         body {
             background-image: url(img/1373.jpg);
-            background-repeat: repeat;    
+            background-repeat: repeat;
             color: white;
             font-family: 'Indie Flower', cursive;
         }
-
+        
         .wraper {
             height: 500px;
             width: 800px;
@@ -38,13 +33,11 @@
             border-radius: 50px;
             /* background-image: url(img/pozadina.jpg); */
             background-position: center;
-            background-size: cover;  
+            background-size: cover;
             overflow-y: auto;
             overflow-x: hidden;
-                 
-
         }
-
+        
         .wraper table tbody td {
             padding: 20px;
             border-bottom: 1px dashed white;
@@ -52,11 +45,8 @@
             width: 370px;
             margin-left: 20px;
             font-size: 18px;
-
         }
-
-   
-
+        
         .checkmark {
             height: 25px;
             width: 25px;
@@ -66,47 +56,57 @@
             position: relative;
             transform: translateX(-50%);
         }
-        .checkmark:hover{
+        
+        .checkmark:hover {
             cursor: pointer;
         }
-
+        
         .finsht {
             text-decoration: line-through;
         }
-        .ceckedBackground{
+        
+        .ceckedBackground {
             background-image: url(img/unnamed.png);
             background-size: cover;
             background-position: center;
         }
-        .wraper > table > thead{
-           width: 100%;
-          
+        
+        .wraper>table>thead {
+            width: 100%;
         }
-
-        .wraper > table > thead > tr{
+        
+        .wraper>table>thead>tr {
             display: block;
             position: relative;
-
-        }   
-        .poruka{
+        }
+        
+        .poruka {
             text-decoration: line-through;
         }
-        .input-custom{
+        
+        .input-custom {
             border-bottom: dotted;
             background-color: transparent;
-            border-top:none;
+            border-top: none;
             border-left: none;
             border-right: none;
             margin-top: 30px;
-           display: block;
-           width: 780px;
-           margin-left: 10px;
-           margin-right: 10px;
-           height: 40px;
-           font-size: 25px;
+            display: block;
+            width: 780px;
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 40px;
+            font-size: 25px;
         }
-        textarea, select, input, button { outline: none; }
-        .clear{
+        
+        textarea,
+        select,
+        input,
+        button {
+            outline: none;
+        }
+        
+        .clear {
             background: white;
             color: black;
             text-align: center;
@@ -114,18 +114,15 @@
             height: 40px;
             padding-top: 5px;
             font-size: 25px;
-            width:300px;
+            width: 300px;
             border-radius: 10px;
             margin: 0 auto;
-        }
-        .ende{
-            padding-top:70px;
-
+            cursor: pointer;
         }
         
-
-
-    
+        .ende {
+            padding-top: 70px;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
 
@@ -138,12 +135,16 @@
         <h1 style="text-align: center;">Todo lista</h1>
         <table>
             <thead>
-                <tr><td><input type="text" class="input-custom"></td></tr>
+                <tr>
+                    <td><input type="text" class="input-custom"></td>
+                </tr>
             </thead>
             <tbody id="data">
                 <tr class="podatak">
                     <td style="text-align: center;" class="tekst">Todo demo parametar</td>
-                    <td class="centriraj-checkbox"><div class="checkmark"></div></td>
+                    <td class="centriraj-checkbox">
+                        <div class="checkmark"></div>
+                    </td>
                 </tr>
             </tbody>
             <tfoot>
@@ -158,39 +159,49 @@
         </table>
     </div>
     <script>
+        // $(document).on('click', '.checkmark', function() {
+        //     $('.checkmark').each(function() {
+        //         $(this).on('click', function() {
+        //             $(this).toggleClass('ceckedBackground');
+        //             $(this).closest('tr').find('.tekst').toggleClass('poruka');
+        //             $(this).closest('tr').toggleClass('selektovan');
+        //         });
+        //     });
 
-$(document).on('click','.checkmark',function(){
-    $('.checkmark').each(function(){
-    $(this).click(function(){
-        $(this).toggleClass('ceckedBackground');
-        $(this).closest('tr').find('.tekst').toggleClass('poruka');
-        $(this).closest('tr').toggleClass('selektovan');
-    });
-});
+        // });
 
-});
-
-$(document).on('click','.clear',function(){
-    $('#data').each(function(){
-        $(this).find('.selektovan').remove();
-    });
-});
+        $(document).on('click', '.checkmark', function() {
+            $(this).toggleClass('ceckedBackground');
+            $(this).closest('tr').find('.tekst').toggleClass('poruka');
+            $(this).closest('tr').toggleClass('selektovan');
 
 
+        });
 
 
-$(document).on('keypress',function(e){
-    var vrednost = $('.input-custom').val();
-    if(e.which == 13){
-       if(vrednost){
-           var dodatak ='<tr class="podatak"><td style="text-align: center;" class="tekst">'+vrednost+'</td><td class="centriraj-checkbox"><div class="checkmark"></div></td></tr>';
-           $("table tbody").append(dodatak);
-           $('.input-custom').val('');
-       }
-       
-    }
-});
 
+
+
+        $(document).on('click', '.clear', function() {
+            $('#data').each(function() {
+                $(this).find('.selektovan').remove();
+            });
+        });
+
+
+
+
+        $(document).on('keypress', function(e) {
+            var vrednost = $('.input-custom').val();
+            if (e.which == 13) {
+                if (vrednost) {
+                    var dodatak = '<tr class="podatak"><td style="text-align: center;" class="tekst">' + vrednost + '</td><td class="centriraj-checkbox"><div class="checkmark"></div></td></tr>';
+                    $("table tbody").append(dodatak);
+                    $('.input-custom').val('');
+                }
+
+            }
+        });
     </script>
 
 </body>
