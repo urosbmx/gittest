@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: white;
+            position: relative;
+        }
+
+        #login {
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 400px;
+            width: 600px;
+            -webkit-box-shadow: 10px 10px 52px 0px rgba(0, 0, 0, 0.48);
+            -moz-box-shadow: 10px 10px 52px 0px rgba(0, 0, 0, 0.48);
+            box-shadow: 10px 10px 52px 0px rgba(0, 0, 0, 0.48);
+        }
+
+        #login h1 {
+            text-align: center;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .holder {
+            text-align: center;
+            position: relative;
+            top: 10%
+        }
+
+        .holder input {
+            display: inline-block;
+            padding: 5px;
+            width: 200px;
+        }
+
+        .holder label {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .holder button {
+            padding: 10px;
+            position: relative;
+            top: 20px;
+            width: 80px;
+        }
+
+        .holder button:active {
+            background-color: teal;
+        }
+        .error{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login">
+        <h1>Welcom admin</h1>
+        <div class="holder">
+            <label>User name</label> <input type="text" name="user">
+        </div>
+
+        <div class="holder">
+            <label>Password</label> <input type="password" name="password">
+        </div>
+        <div class="holder">
+            <button class="login">Login</button>
+        </div>
+    </div>
+    <script>
+        $(document).on('click','.login',function(){
+           var user = $("input[name = 'user']").val();
+           var password = $("input[name = 'password']").val();
+        
+            if(user && password){
+
+            }else{
+                $("input[name = 'user']").addClass('error');
+                $("input[name = 'password']").addClass('error');
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
